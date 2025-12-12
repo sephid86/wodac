@@ -11,9 +11,9 @@
 
 ### 요구 사항 / Requirements
 
-이 플러그인은 다음 프로그램들이 시스템에 설치되어 있어야 작동합니다:
+이 스크립트는 다음 프로그램들이 시스템에 설치되어 있어야 작동합니다:
 
-This plugin requires the following programs to be installed on your system to work:
+This script requires the following programs to be installed on your system to work:
 
 *   **`wofi`**: Wayland 호환 애플리케이션 런처 (또는 `dmenu` 모드를 지원하는 유사 도구)
 *   **`xdg-utils`**: MIME 타입 감지 및 기본 앱 설정을 위한 표준 XDG 유틸리티
