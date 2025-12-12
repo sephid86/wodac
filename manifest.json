@@ -1,0 +1,8 @@
+{
+  "name": "wodac",
+  "version": "1.0.0",
+  "description": "A Wofi-based default app chooser for Yazi.",
+  "license": "GPL-3.0",
+  "script": "wodac.sh",
+  "entry": "manager"
+}
