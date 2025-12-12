@@ -21,12 +21,11 @@ This plugin requires the following programs to be installed on your system to wo
 
 ### 설치 방법 / Installation
 
-    ```bash
     mkdir -p ~/scripts
     cd ~/scripts
     git clone https://github.com/sephid86/wodac
     chmod +x ~/wodac.sh
-    ```
+
 
 설치가 완료되면, 다음 단계에 따라 단축키를 설정해야 합니다.
 
