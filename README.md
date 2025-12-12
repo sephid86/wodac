@@ -50,11 +50,11 @@ Once installed, you must configure a shortcut key in the next step.
 
 2.   파일에 아래 내용을 추가합니다.: / Append the following to the file.:
 
-    ```toml
+
     [[mgr.prepend_keymap]]
     on  = "A"
     run = 'shell "~/wodac/wodac.sh $@"'
-    ```
+
 
 3.  Yazi를 다시 시작하거나, `R` 키를 눌러 설정을 새로고침합니다. / Restart Yazi or press `R` to reload configuration.
 
