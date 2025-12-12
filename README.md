@@ -1,8 +1,8 @@
 # wodac (Wofi Default App Chooser)
 
-`wodac`은 Yazi 파일 관리자를 위한 플러그인으로, Wofi를 사용하여 현재 파일의 MIME 타입을 기반으로 기본 애플리케이션을 시각적으로 선택하고 설정할 수 있게 해줍니다.
+`wodac`은 Wofi를 이용해 현재 파일의 기본 앱을 시각적으로 선택/설정합니다. Yazi, Ranger 같은 CUI 파일 관리자에서 유용합니다.
 
-`wodac` is a plugin for the Yazi file manager that lets you visually select and set the default application based on the current file's MIME type using Wofi.
+`wodac` visually selects/sets the current file's default app using Wofi. It is useful in CUI file managers like Yazi and Ranger.
 
 ---
 
@@ -21,16 +21,11 @@ This plugin requires the following programs to be installed on your system to wo
 
 ### 설치 방법 / Installation
 
-Yazi의 내장 플러그인 관리자를 사용하여 쉽게 설치할 수 있습니다.
-
-Use Yazi's built-in plugin manager for easy installation.
-
-1.  Yazi를 엽니다. / Open Yazi.
-2.  `:` 키를 눌러 명령 모드로 진입합니다. / Press `:` to enter command mode.
-3.  다음 명령어를 입력하고 `Enter`를 누릅니다: / Enter the following command and press `Enter`:
-
     ```bash
-    :plugin add sephid86/wodac
+    mkdir -p ~/scripts
+    cd ~/scripts
+    git clone https://github.com/sephid86/wodac
+    chmod +x ~/wodac.sh
     ```
 
 설치가 완료되면, 다음 단계에 따라 단축키를 설정해야 합니다.
@@ -48,16 +43,15 @@ Once installed, you must configure a shortcut key in the next step.
 1.  Yazi 설정 파일 `keymap.toml`을 엽니다. / Open your Yazi configuration file `keymap.toml`.
 
     ```bash
-    yazi --edit keymap
+    nano ~/.config/yazi/keymap.toml
     ```
 
-2.  `[manager]` 섹션을 찾아 다음 줄을 추가합니다: / Find the `[manager]` section and add the following line:
+2.   파일에 아래 내용을 추가합니다.: / Append the following to the file.:
 
     ```toml
-    [manager]
-    # Wodac 플러그인 실행 (Shift + A)
-    # Run Wodac plugin (Shift + A)
-    A = "plugin run --fork wodac $f"
+    [[mgr.prepend_keymap]]
+    on  = "A"
+    run = 'shell "~/wodac/wodac.sh $@"'
     ```
 
 3.  Yazi를 다시 시작하거나, `R` 키를 눌러 설정을 새로고침합니다. / Restart Yazi or press `R` to reload configuration.
