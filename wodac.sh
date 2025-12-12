@@ -85,7 +85,7 @@ echo "Wofi 실행 중... (우선순위 배치)"
 echo "Running Wofi... (priority order)"
 
 # 4. Wofi 실행 및 선택 처리
-SELECTED_NAME=$(echo -e "$APP_NAMES" | wofi -d -p "기본 앱 선택 / Select Default App for $CURRENT_MIME:")
+SELECTED_NAME=$(echo -e "$APP_NAMES" | wofi -d -p "Choose Default App for $CURRENT_MIME:" -W 350)
 
 if [ -n "$SELECTED_NAME" ]; then
     CLEAN_NAME=$(echo "$SELECTED_NAME" | tr -d '\n')
