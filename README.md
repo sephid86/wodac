@@ -3,9 +3,11 @@
 
 # wodac (Wofi Default App Chooser)
 
-`wodac`은 Wofi를 이용해 현재 파일의 기본 앱을 시각적으로 선택/설정합니다. Yazi, Ranger 같은 CUI 파일 관리자에서 유용합니다.
+`wodac`은 Wofi를 이용해 현재 파일의 기본 앱을 시각적으로 선택/설정합니다. 
+Yazi, Ranger 같은 CUI 파일 관리자에서 유용합니다.
 
-`wodac` visually selects/sets the current file's default app using Wofi. It is useful in CUI file managers like Yazi and Ranger.
+`wodac` visually selects/sets the current file's default app using Wofi. 
+It is useful in CUI file managers like Yazi and Ranger.
 
 ---
 
