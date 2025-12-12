@@ -2,7 +2,7 @@
 # 
 # wodac (Wofi Default App Chooser)
 #
-# Copyright (C) 2025 Google (as the developer of the underlying AI model)
+# Copyright (C) 2025 AI on Google Search (Gemini) (as the developer of the underlying AI model)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
