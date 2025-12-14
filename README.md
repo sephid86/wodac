@@ -29,7 +29,7 @@ This script requires the following programs to be installed on your system to wo
     mkdir -p ~/scripts
     cd ~/scripts
     git clone https://github.com/sephid86/wodac
-    chmod +x ~/wodac.sh
+    chmod +x ~/scripts/wodac.sh
 
 
 설치가 완료되면, 다음 단계에 따라 단축키를 설정해야 합니다.
@@ -55,7 +55,7 @@ Once installed, you must configure a shortcut key in the next step.
 
     [[mgr.prepend_keymap]]
     on  = "A"
-    run = 'shell "~/wodac/wodac.sh $@"'
+    run = 'shell "~/scripts/wodac/wodac.sh $@"'
 
 
 3.  Yazi를 다시 시작하거나, `R` 키를 눌러 설정을 새로고침합니다. / Restart Yazi or press `R` to reload configuration.
