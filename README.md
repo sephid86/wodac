@@ -29,7 +29,7 @@ This script requires the following programs to be installed on your system to wo
     mkdir -p ~/scripts
     cd ~/scripts
     git clone https://github.com/sephid86/wodac
-    chmod +x ~/scripts/wodac.sh
+    chmod +x scripts/wodac.sh
 
 
 설치가 완료되면, 다음 단계에 따라 단축키를 설정해야 합니다.
